@@ -6,9 +6,6 @@ specified by the user. The user can specify the number of captions to generate f
 import os
 
 import pandas as pd
-import tensorflow as tf
-from tqdm import tqdm
-
 from src.models.captioner import ImageCaptioningModel
 from src.utils.data_utils import DataUtils
 
@@ -36,7 +33,7 @@ preprocess_function = tf.keras.applications.xception.preprocess_input
 # - encoder/: Folder containing the encoder model
 # - decoder/: Folder containing the decoder model
 # - attention/: Folder containing the attention model
-models_path = 'saved_models'
+models_path = '/content/attention-object-based-captioning/saved_models'
 
 
 if __name__ == '__main__':
